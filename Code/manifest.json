@@ -1,7 +1,7 @@
 {
 	"name": "My Extension",
 	"description": "快速启动与禁用扩展程序",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"browser_action": {
 		"default_popup": "index.html"
 	},
