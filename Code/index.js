@@ -30,10 +30,10 @@ var getIcon = function(icons)
 var setSize = function(num)
 {
 	var column = 3;
-	if (num >= 4 * 2) column = 4;
-	if (num >= 5 * 2) column = 5;
-	if (num >= 6 * 2) column = 6;
-	if (num >= 7 * 2) column = 7;
+	if (num >= 4 * 2 + 1) column = 4;
+	if (num >= 5 * 2 + 1) column = 5;
+	if (num >= 6 * 2 + 1) column = 6;
+	if (num >= 7 * 2 + 1) column = 7;
 	var row = (parseInt(num / column) + (num % column > 0 ? 1 : 0));
 
 	$("#extension").css({
@@ -61,7 +61,7 @@ chrome.management.getAll(function(array)
 		if (array[i]["shortName"] != "My Extension" && array[i]["type"] == "extension")
 		{
 			var html = "";
-			html += "<div class='icon'" + " title='" + array[i]["shortName"] + "'" + " id='" + array[i]["id"] + "'" + " state='" + array[i]["enabled"] + "'" + ">";
+			html += "<div class='icon'" + " title='" + array[i]["shortName"] + "\n" + array[i]["description"] + "'" + " id='" + array[i]["id"] + "'" + " state='" + array[i]["enabled"] + "'" + ">";
 			html += "	<img src='" + getIcon(array[i]["icons"]) + "'>";
 			html += "</div>";
 			$("#extension").append(html);
@@ -71,6 +71,9 @@ chrome.management.getAll(function(array)
 	// 设置点击功能
 	$("#extension .icon").mouseup(function(e)
 	{
-		setState(this);
+		if (e.which == 1)
+		{
+			setState(this);
+		}
 	});
 });
