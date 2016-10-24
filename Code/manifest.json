@@ -1,0 +1,17 @@
+{
+	"name": "My Extension",
+	"description": "快速启动与禁用扩展程序",
+	"version": "1.0.0",
+	"browser_action": {
+		"default_popup": "index.html"
+	},
+	"permissions": [
+		"management"
+	],
+	"icons": {
+		"16": "res/icon16.png",
+		"48": "res/icon48.png",
+		"128": "res/icon128.png"
+	},
+	"manifest_version": 2
+}
