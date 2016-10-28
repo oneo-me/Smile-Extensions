@@ -30,10 +30,10 @@ var getIcon = function(icons)
 var setSize = function(num)
 {
 	var column = 3;
-	if (num >= 4 * 2 + 1) column = 4;
-	if (num >= 5 * 2 + 1) column = 5;
-	if (num >= 6 * 2 + 1) column = 6;
-	if (num >= 7 * 2 + 1) column = 7;
+	if (num > 4 * 2 + 1) column = 4;
+	if (num > 5 * 2 + 1) column = 5;
+	if (num > 6 * 2 + 1) column = 6;
+	if (num > 7 * 2 + 1) column = 7;
 	var row = (parseInt(num / column) + (num % column > 0 ? 1 : 0));
 
 	$("#extension").css({
