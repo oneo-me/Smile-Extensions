@@ -1,19 +1,17 @@
 {
-	"name": "My Extension",
-	"description": "快速启动与禁用扩展程序",
-	"version": "1.0.3",
-	"browser_action":
-	{
-		"default_popup": "index.html"
-	},
-	"permissions": [
-		"management"
-	],
-	"icons":
-	{
-		"16": "res/icon16.png",
-		"48": "res/icon48.png",
-		"128": "res/icon128.png"
-	},
-	"manifest_version": 2
+    "name": "Smile Extensions",
+    "description": "快速启动与禁用扩展程序",
+    "version": "1.1.1",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "management"
+    ],
+    "icons": {
+        "16": "res/icon16@3x.png",
+        "48": "res/icon48@3x.png",
+        "128": "res/icon128@3x.png"
+    },
+    "manifest_version": 2
 }

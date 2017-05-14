@@ -1,7 +1,3 @@
 import Vue from "vue"
 
-new Vue(
-{
-	el: "#app",
-	render: h => h(require("./app.vue"))
-})
+new Vue({ el: "#app", render: h => h(require("./app.vue")) })
