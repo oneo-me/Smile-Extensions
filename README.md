@@ -5,7 +5,7 @@ Chrome 扩展管理插件，方便快速启用/禁用
 
 ## 截图
 
-![screenshot](/Users/oneo/Desktop/项目/Smile-Extensions/store/screenshot.png)
+![screenshot](store/screenshot.png)
 
 
 
