@@ -20,7 +20,7 @@ export default {
                     return item["icons"][item["icons"].length - 1]["url"]
                 }
             }
-            return "./res/defaultIcon16@3x.png"
+            return "./defaultIcon.png"
         },
         changeState: function (item) {
             chrome.management.setEnabled(item["id"], !item["enabled"], function () {
@@ -33,7 +33,7 @@ export default {
             var num = this.items.length
             var column = 3
             var minColumn = 3
-            var maxColumn = 7
+            var maxColumn = 10
             for (var i = maxColumn; i >= minColumn; i--) {
                 if (num > i * 2 + 1) {
                     column = i
@@ -77,9 +77,9 @@ export default {
                 filter grayscale(0)
                 opacity 1
             img
-                width 20px
+                width 18px
                 height @width
-                margin 5px
+                margin 6px
                 &:active
                     transform scale(0.9,0.9)
 </style>
