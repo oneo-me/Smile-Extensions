@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd src
+rm ../out/out.zip
+zip -r ../out/out.zip ./*

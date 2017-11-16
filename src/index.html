@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            margin: 2px;
+        }
+
+        #app span img {
+            width: 18px;
+            height: 18px;
+            margin: 3px;
+            padding: 2px;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 3px;
+
+            filter: grayscale(100%);
+            opacity: 0.2;
+        }
+
+        #app span.enabled img {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+
+        #app span:hover img {
+            transform: scale(1.1, 1.1);
+            opacity: 1;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        #app span:active img {
+            transform: scale(1.0, 1.0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
